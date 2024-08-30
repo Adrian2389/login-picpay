@@ -17,13 +17,57 @@ body {
   float: right;
   overflow: hidden;
 }
+.logo > img {
+  margin-bottom: 60px;
+  width: 100px;
+}
 
 .container {
-  position: absolute;
   min-height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  gap: 20px;
   text-align: center;
+}
+form {
+  width: 100%;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.for > input {
+  height: 45px;
+  outline: none;
+  width: 350px;
+  border: 1px solid #8d8b8b;
+  border-radius: 7px;
+}
+.for h1 {
+  margin-bottom: 60px;
+  font-weight: bold;
+  text-align: left;
+  margin-left: 65px;
+}
+.entrar input {
+  color: white;
+  background-color: #238662;
+  width: 350px;
+  height: 45px;
+  border-radius: 7px;
+  margin-top: 20px;
+  border: 0;
+  font-weight: bolder;
+}
+
+.for {
+  margin-bottom: 20px;
+}
+.cont > a {
+  text-align: center;
+  color: #238662;
+  font-weight: bold;
+  font-size: 0.8rem;
 }
