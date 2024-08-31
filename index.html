@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <div class="image">
       <img
@@ -21,7 +22,7 @@
           </div>
           <div class="for">
             <h1>Acesse sua conta</h1>
-            <input type="text" name="cpf" id="cpf" required placeholder="CPF" />
+            <input type="text" class="cpf" required placeholder="CPF" />
           </div>
           <div class="for">
             <input
@@ -42,7 +43,7 @@
         <div class="fo">
           <div class="footer">
             <h1>Gerencie seus contatos</h1>
-            <p>Acesse seus Emprestimos sem precisar de conta</p>
+            <p>Acesse seus Emprestimos sem precisar de conta.</p>
           </div>
           <div class="foot">
             <a href="#">Acessar emprestimos</a>
@@ -59,5 +60,13 @@
         </div>
       </div>
     </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cleave.js/1.0.2/cleave.min.js"></script>
+    <script>
+      new Cleave(".cpf", {
+        delimiters: [".", ".", "-"],
+        blocks: [3, 3, 3, 2],
+        numericOnly: true,
+      });
+    </script>
   </body>
 </html>
